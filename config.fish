@@ -181,9 +181,9 @@ function rgv
 end
 
 # pnpm
-set -gx PNPM_HOME "/home/mucinoab/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+set -gx PNPM_HOME "/home/bmucino/.local/share/pnpm"
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
 end
 # pnpm end
 
