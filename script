@@ -69,5 +69,5 @@ ln -sf ~/Dotfiles/zellij-default.kdl ~/.config/zellij/layouts/default.kdl
 # jump-to-pane and in-place permission answers. The installer drops the plugin
 # in ~/.config/zellij/plugins, the hook bridge in ~/.config/zj-agent-mob, and
 # merges its hooks into ~/.claude/settings.json and ~/.codex/hooks.json.
-# Open it with Ctrl+o then m (see the session keybinds in zellij.kdl).
+# Open it with Ctrl+s then m (see the scroll keybinds in zellij.kdl).
 curl -fsSL https://github.com/mohseenrm/zj-agent-mob/releases/download/v0.10.1/init.sh | sh
