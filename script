@@ -57,20 +57,11 @@ ln -sf ~/Dotfiles/glide.ts ~/.config/glide/glide.ts
 mkdir ~/.config/ghostty/
 ln -sf ~/Dotfiles/ghostty ~/.config/ghostty/config
 
-# --- Zellij: zellaude status bar (Claude Code activity) ---
+# --- Zellij ---
 mkdir -p ~/.config/zellij/plugins ~/.config/zellij/layouts
 
-# zellaude wasm: a Claude-aware tab bar (activity symbols, elapsed time,
-# permission flash, click-to-focus). Manual install, like zjstatus was.
-curl -fsSL -o ~/.config/zellij/plugins/zellaude.wasm \
-  https://github.com/ishefi/zellaude/releases/latest/download/zellaude.wasm
-
-# Layout that loads zellaude as the tab bar (symlinked like the rest)
+# Layout with a one-line compact bar instead of the default tab + status bars
 ln -sf ~/Dotfiles/zellij-default.kdl ~/.config/zellij/layouts/default.kdl
-
-# Nothing else to do here: on its first load the plugin writes its own hook
-# bridge to ~/.config/zellij/plugins/zellaude-hook.sh and registers it in
-# ~/.claude/settings.json. Zellij will ask to grant it permissions once.
 
 # --- Zellij: zj-agent-mob floating agent panel ---
 
