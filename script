@@ -71,3 +71,12 @@ ln -sf ~/Dotfiles/zellij-default.kdl ~/.config/zellij/layouts/default.kdl
 # Nothing else to do here: on its first load the plugin writes its own hook
 # bridge to ~/.config/zellij/plugins/zellaude-hook.sh and registers it in
 # ~/.claude/settings.json. Zellij will ask to grant it permissions once.
+
+# --- Zellij: zj-agent-mob floating agent panel ---
+
+# Floating panel listing every claude/codex agent across sessions, with status,
+# jump-to-pane and in-place permission answers. The installer drops the plugin
+# in ~/.config/zellij/plugins, the hook bridge in ~/.config/zj-agent-mob, and
+# merges its hooks into ~/.claude/settings.json and ~/.codex/hooks.json.
+# Open it with Ctrl+o then m (see the session keybinds in zellij.kdl).
+curl -fsSL https://github.com/mohseenrm/zj-agent-mob/releases/download/v0.10.1/init.sh | sh
